@@ -4,8 +4,9 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.wait import WebDriverWait
 
-from locators import PAGE_LOGIN, LOGIN_NAME_INPUT_XPATH, PASSWORD, LOGIN_PASSWORD_INPUT_XPATH, USER_EMAIL, \
-    LOGIN_AUTHORIZE_BTN_XPATH, LOGIN_REMIND_PWD_LINK_XPATH
+from locators import LOGIN_NAME_INPUT_XPATH, LOGIN_PASSWORD_INPUT_XPATH, LOGIN_AUTHORIZE_BTN_XPATH, LOGIN_REMIND_PWD_LINK_XPATH
+from urls import PAGE_LOGIN
+from data import USER_EMAIL, PASSWORD
 
 
 @pytest.fixture()

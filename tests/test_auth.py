@@ -1,7 +1,8 @@
 from selenium.webdriver.common.by import By
 
-from locators import PAGE_LOGIN, PAGE_MAIN, PAGE_REGISTER, PAGE_REMIND_PWD, MAIN_AUTH_BTN_XPATH, \
+from locators import MAIN_AUTH_BTN_XPATH, \
     MAIN_CABINET_BTN_XPATH, REGISTER_LOGIN_LINK_XPATH, REMIND_PWD_LOGIN_LINK_XPATH
+from urls import PAGE_MAIN, PAGE_REGISTER, PAGE_LOGIN, PAGE_REMIND_PWD
 
 
 def test_main_page_auth_btn_success(web_driver):

@@ -1,8 +1,9 @@
 from selenium.webdriver.common.by import By
 
-from locators import PAGE_MAIN, CONSTRUCTOR_BREAD_LINK_XPATH, CONSTRUCTOR_SAUSE_LINK_XPATH, \
+from locators import CONSTRUCTOR_BREAD_LINK_XPATH, CONSTRUCTOR_SAUSE_LINK_XPATH, \
     CONSTRUCTOR_FILLING_LINK_XPATH, CONSTRUCTOR_BREAD_HEADER_XPATH, CONSTRUCTOR_SAUSE_HEADER_XPATH, \
     CONSTRUCTOR_FILLING_HEADER_XPATH
+from urls import PAGE_MAIN
 
 
 def test_constructor_to_bread_success(web_driver):

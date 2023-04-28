@@ -1,27 +1,4 @@
-# Базовая часть адреса сайта
-HOST = "https://stellarburgers.nomoreparties.site"
-# Имя пользователя используемое для тестов
-USER_NAME = "maslennikova_elena_09_001"
-# Почта пользователя используемая для тестов
-USER_EMAIL = f"{USER_NAME}@yandex.ru"
-# Пароль используемый в Тестах
-PASSWORD = "123456"
-# Пароль не верной длинный, для отрицательного теста регшистрации
-WRONG_PASSWORD = "123"
-# Сообщение ошибки о неверном пароле
-REGISTER_WRONG_PWD_MESSAGE = "Некорректный пароль"
 
-# Страницы
-# - Главная страница
-PAGE_MAIN = f"{HOST}/"
-# - Регистрация
-PAGE_REGISTER = f"{HOST}/register"
-# - Авторизацимя
-PAGE_LOGIN = f"{HOST}/login"
-# - Страница востановления пароля
-PAGE_REMIND_PWD = f"{HOST}/forgot-password"
-# - Страница личного кабинета
-PAGE_CABINET = f"{HOST}/account/profile"
 
 
 # Страница регистрации
