@@ -1,0 +1,13 @@
+HOST = "https://stellarburgers.nomoreparties.site"
+"""Базовая часть адреса сайта"""
+
+PAGE_MAIN = f"{HOST}/"
+"""Главная страница"""
+PAGE_REGISTER = f"{HOST}/register"
+"""Регистрация"""
+PAGE_LOGIN = f"{HOST}/login"
+"""Авторизацимя"""
+PAGE_REMIND_PWD = f"{HOST}/forgot-password"
+"""Страница востановления пароля"""
+PAGE_CABINET = f"{HOST}/account/profile"
+"""Страница личного кабинета"""
