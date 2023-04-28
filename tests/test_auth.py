@@ -12,7 +12,6 @@ def test_main_page_auth_btn_success(web_driver):
     assert web_driver.current_url == PAGE_LOGIN and remind_link.text == "Восстановить пароль"
 
 
-
 def test_cabinet_btn_auth_success(web_driver):
     web_driver.get(PAGE_MAIN)
     web_driver.find_element(By.XPATH, MainLocator.CABINET_BTN_XPATH).click()

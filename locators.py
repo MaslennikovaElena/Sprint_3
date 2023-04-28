@@ -22,6 +22,8 @@ class MainLocator:
     """Кнопка перехода к авторизации"""
     CABINET_BTN_XPATH = ".//a/p[text()='Личный Кабинет']"
     """Кнопка перехода в личный кабинет"""
+    CONSTRUCTOR_HEADER_XPATH = ".//h1[text()='Соберите бургер']"
+    """Загноловок конструктора (всегда на главной странице)"""
 
 
 class RemindPwdLocator:

@@ -2,9 +2,9 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.wait import WebDriverWait
 
+from data import USER_NAME, USER_EMAIL, PASSWORD, WRONG_PASSWORD, REGISTER_WRONG_PWD_MESSAGE
 from locators import RegisterLocator, LoginLocator, MainLocator, CabinetLocator
 from urls import PAGE_REGISTER
-from data import USER_NAME, USER_EMAIL, PASSWORD, WRONG_PASSWORD, REGISTER_WRONG_PWD_MESSAGE
 
 
 def test_register_success(web_driver):
