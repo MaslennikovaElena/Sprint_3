@@ -58,6 +58,7 @@ class CabinetLocator:
     PROFILE_LOGIN_FIELD_XPATH = ".//label[text()='Логин']/parent::div/input"
     """Поле вводе Логина пользователя"""
 
+
 class ConstructorLocator:
     """Локаторы для конструктора"""
 
