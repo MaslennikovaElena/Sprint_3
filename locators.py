@@ -53,7 +53,10 @@ class CabinetLocator:
     """Кнопка выхода из аккаунта"""
     SITE_LOGO_XPATH = ".//div[contains(@class, 'logo')]/a"
     """Лого сайта"""
-
+    PROFILE_LINK_XPATH = ".//a[text()='Профиль']"
+    """Ссылка на профиль пользователя"""
+    PROFILE_LOGIN_FIELD_XPATH = ".//label[text()='Логин']/parent::div/input"
+    """Поле вводе Логина пользователя"""
 
 class ConstructorLocator:
     """Локаторы для конструктора"""
