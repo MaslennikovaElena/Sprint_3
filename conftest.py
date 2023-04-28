@@ -4,7 +4,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.wait import WebDriverWait
 
-from locators import LOGIN_NAME_INPUT_XPATH, LOGIN_PASSWORD_INPUT_XPATH, LOGIN_AUTHORIZE_BTN_XPATH, LOGIN_REMIND_PWD_LINK_XPATH
+from locators import LoginLocator
 from urls import PAGE_LOGIN
 from data import USER_EMAIL, PASSWORD
 
@@ -26,12 +26,12 @@ def web_driver():
 @pytest.fixture()
 def authorized(web_driver):
     web_driver.get(PAGE_LOGIN)
-    web_driver.find_element(By.XPATH, LOGIN_NAME_INPUT_XPATH).send_keys(USER_EMAIL)
-    web_driver.find_element(By.XPATH, LOGIN_PASSWORD_INPUT_XPATH).send_keys(PASSWORD)
-    web_driver.find_element(By.XPATH, LOGIN_AUTHORIZE_BTN_XPATH).click()
+    web_driver.find_element(By.XPATH, LoginLocator.NAME_INPUT_XPATH).send_keys(USER_EMAIL)
+    web_driver.find_element(By.XPATH, LoginLocator.PASSWORD_INPUT_XPATH).send_keys(PASSWORD)
+    web_driver.find_element(By.XPATH, LoginLocator.AUTHORIZE_BTN_XPATH).click()
     # ожидание когда выполнится авторизация
     WebDriverWait(web_driver, 10).until_not(
-        expected_conditions.visibility_of_element_located((By.XPATH, LOGIN_REMIND_PWD_LINK_XPATH))
+        expected_conditions.visibility_of_element_located((By.XPATH, LoginLocator.REMIND_PWD_LINK_XPATH))
     )
 
     return web_driver

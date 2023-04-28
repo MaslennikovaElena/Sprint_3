@@ -1,14 +1,13 @@
-# Базовая часть адреса сайта
 HOST = "https://stellarburgers.nomoreparties.site"
+"""Базовая часть адреса сайта"""
 
-# Страницы
-# - Главная страница
 PAGE_MAIN = f"{HOST}/"
-# - Регистрация
+"""Главная страница"""
 PAGE_REGISTER = f"{HOST}/register"
-# - Авторизацимя
+"""Регистрация"""
 PAGE_LOGIN = f"{HOST}/login"
-# - Страница востановления пароля
+"""Авторизацимя"""
 PAGE_REMIND_PWD = f"{HOST}/forgot-password"
-# - Страница личного кабинета
+"""Страница востановления пароля"""
 PAGE_CABINET = f"{HOST}/account/profile"
+"""Страница личного кабинета"""
